@@ -1,10 +1,14 @@
-
+import FileUploader from "./components/FileUploader"
 
 function App() {
 
   return (
     <>
-      <div>Hello</div>
+      <div>
+        <h1 className="text-2xl font-bold">
+        <FileUploader/>
+        </h1>
+      </div>
     </>
   )
 }
