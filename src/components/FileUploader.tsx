@@ -44,7 +44,19 @@ export default function FileUploader() {
             <p>Type: {file.type}</p>
           </div>
         )}
-        {file && status !== 'uploading' && <button>Upload</button>}
+        {file && status !== 'uploading' && <button onClick={handleFileUpload}>Upload</button>}
+        {status === 'success' && (
+          <p className="text-sm text-green-600">
+            File uploaded successfully!
+          </p>
+        )}
+
+        {status === 'error' && (
+          <p className="text-sm text-red-600">
+            Upload failed. Please try again.
+          </p>
+        )}
+
     </div>
   )
 }
