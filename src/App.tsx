@@ -1,4 +1,4 @@
-import FileUploader from "./components/FileUploader"
+import { MultiFileUpload } from "./components/MultiFileUpload"
 
 function App() {
 
@@ -6,7 +6,7 @@ function App() {
     <>
       <div>
         <h1 className="text-2xl font-bold">
-        <FileUploader/>
+          <MultiFileUpload/>
         </h1>
       </div>
     </>
